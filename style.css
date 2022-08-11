@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --primary-light: hsl(225, 100%, 94%);
+    --primary-dark: hsl(245, 75%, 52%);
+
+    --neutral-dark-shadow: hsla(245, 75%, 52%, 19.03%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+    --neutral-light-blue: hsl(245, 83%, 68%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    color: var(--neutral-desaturated-blue);
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--primary-light);
+    text-align: center;
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 327px;
+    border-radius: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--neutral-dark-blue);
+    font-weight: 900;
+}
+
+.container > h1 {
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+.container > p {
+    margin: 15px 30px 0 30px;
+    line-height: 26px;
+}
+
+.container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.plan-type {
+    margin: 22px 20px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    background-color: var(--neutral-very-pale-blue);
+    font-size: 14px;
+    border-radius: 11px;
+}
+
+.plan-type img {
+    width: 15%;
+}
+
+
+.plan-type-change {
+    text-decoration: underline;
+    color: var(--primary-dark);
+    font-weight: 900;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.plan-type-change:active {
+    color: var(--neutral-light-blue);
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--primary-dark);
+    border: 0;
+    height: 50px;
+    margin: 0 20px 6px 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 11px;
+    box-shadow: 0 20px 20px var(--neutral-dark-shadow);
+    cursor: pointer;
+}
+
+.btn-primary:active {
+    background-color: var(--neutral-light-blue);
+}
+
+.cancel-order {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.cancel-order:active {
+    color: var(--neutral-dark-blue)
+}
